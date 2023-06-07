@@ -56,7 +56,7 @@ ROOT_URLCONF = 'infra_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'infra_app', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
